@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    
+</body>
+<script>
+ const promiseONe= new Promise(function(resolve,reject){
+    setTimeout(function(){
+        console.log('async task completed');
+        resolve()
+    },1000)
+ })
+ promiseONe.then(function(){
+    console.log("promise completed")
+ })
+</script>
+</html>
